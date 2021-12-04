@@ -1,0 +1,19 @@
+img{
+    height: 200px;
+    width: 200px;
+    }
+.test{
+    display: flex;
+    gap: 3rem;
+    }
+.test:nth-child(even){
+    flex-direction: row-reverse;
+    }
+@media (max-width: 420px){
+    .test{
+    flex-direction: column;
+    }
+    .test:nth-child(even){
+    flex-direction: column;
+    }
+}
